@@ -20,5 +20,5 @@
 - 
 
 ## 🧭 Additional repositories. 
-- https://github.com/jcafvirrey/Jetpack_Compose_In_Class --> Class code repository 
+- 
 
