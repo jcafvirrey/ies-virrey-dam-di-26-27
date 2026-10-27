@@ -7,6 +7,19 @@ interface Pet{
     }
 }
 //6. Inheritance: Open and Override
+open class Example(name: String){
+    open fun exampleOpenMethod(){
+
+    }
+    fun exampleCloseMethod(){
+
+    }
+}
+class Child(name:String, age:Int):Example(name){
+    override fun exampleOpenMethod() {
+        super.exampleOpenMethod()
+    }
+}
 abstract class Animal(val name: String){
     abstract fun makeNoise()
     fun sleep(){
@@ -16,6 +29,7 @@ abstract class Animal(val name: String){
         println("$name eats.")
     }
 }
+
 
 class Dog(name:String):Animal(name), Pet{
     override fun makeNoise() {
@@ -66,25 +80,25 @@ fun favoriteFood(animal:Animal):String {
 }
 fun main(){
     //6. Inheritance: Open and Override
-//    val rex = Dog("Rex")
-//    rex.makeNoise()
-//    rex.sleep()
+    val rex = Dog("Rex")
+    rex.makeNoise()
+    rex.sleep()
     //6.1 Calling the parent version: super
-//    Hippo("Gloria").eat()
+    Hippo("Gloria").eat()
     //7. Abstract classes
-//    val tom = Cat("Tom")
-//    tom.makeNoise()
-//    tom.eat()
+    val tom = Cat("Tom")
+    tom.makeNoise()
+    tom.eat()
     //8. Interfaces
-//    rex.play()
-//    tom.play()
-//    tom.beFriendly()
+    rex.play()
+    tom.play()
+    tom.beFriendly()
     //9. Polymorphism, is and smart casts
-//    val animals: List<Animal> = listOf(Dog("Rex"),Cat("Tom"), Hippo("Gloria"))
-//    for(animal in animals){
-//        animal.makeNoise()
-    //9.1 Checking the type with is
-//        describe(animal)
-//        favoriteFood(animal)
-//    }
+    val animals: List<Animal> = listOf(Dog("Rex"),Cat("Tom"), Hippo("Gloria"))
+    for(animal in animals) {
+        animal.makeNoise()
+        describe(animal)
+        favoriteFood(animal)
+    }
+
 }

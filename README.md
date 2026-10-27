@@ -23,7 +23,8 @@
 - **14/10/2026**: Module 3. Lambdas
 - **19/10/2026**: Module 4: Null safety. 
 - **19/10/2026**: Module 4: Collections
-- **26/07/2026**: Module 5: Classes and Objects
+- **26/10/2026**: Module 5: Classes and Objects
+- **27/10/2026**: MOdule 5: Classes and Objects
 
 ## 💻 How to open the repository in IntelliJ IDEA
 1. Fork this repository and clone **your fork** (`File → New → Project from Version Control…`).
