@@ -110,8 +110,8 @@ fun MailAndPassword(modifier: Modifier = Modifier){
 @Composable
 fun MyPreviewMyTextField(){
 
-    //NameField()
+    NameField()
     //MyTextField()
-    MailAndPassword()
+    //MailAndPassword()
 }
 
